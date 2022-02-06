@@ -21,4 +21,3 @@ print('a')
 #下記コマンド「hash -r」で情報を消去しましょう。
 
 #pyenv: /Users/zashii/.pyenv/versions/3.10.2 already exists
-
