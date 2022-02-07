@@ -7,3 +7,5 @@ from bs4 import BeautifulSoup
 rq = requests.get('https://www.yahoo.co.jp')
 print(rq.text)
 
+list(range(3,6))
+
