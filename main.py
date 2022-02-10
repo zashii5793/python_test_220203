@@ -9,3 +9,9 @@ print(rq.text)
 
 list(range(3,6))
 
+list_a =['dog','cat','tiger','horse','monkey']
+for s in li[:]:
+    if len(s)== 5:
+        list_a.append(s)
+
+list_a
