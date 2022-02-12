@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-from http.client import GONE, OK
-import sys
-from xml.dom import SyntaxErr
-sys.path.append('/Users/zashii/Library/Python/3.8/lib/python/site-packages')
 import requests
 from bs4 import BeautifulSoup
 
