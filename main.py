@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from unicodedata import name
 import requests
 from bs4 import BeautifulSoup
 

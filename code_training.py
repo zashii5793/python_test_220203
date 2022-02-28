@@ -3,7 +3,9 @@
     Output : python
 """
 
+from inspect import ArgSpec
 from operator import index
+from pprint import pprint
 from typing import List
 from unittest import result
 
@@ -32,3 +34,7 @@ if __name__ == '__main__':
 data = [[1, 2, 3, 4],[5, 6, 7, 8],[9, 10, 11, 12]]
 result=[[row[i] for row in data] for i in range(4)]
 result
+
+moji='dive\ninto\ncode\r'
+print(len(moji))
+
