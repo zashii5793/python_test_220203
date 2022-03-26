@@ -1,6 +1,9 @@
+
 # -*- coding: utf-8 -*-
 from unicodedata import name
 import requests
+import sys
+sys.path.append('/opt/homebrew/lib/python3.9/site-packages')
 from bs4 import BeautifulSoup
 
 code = 9020 #JR東日本の証券コード
