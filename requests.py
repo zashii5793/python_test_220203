@@ -1,3 +1,14 @@
-import sys
-sys.path.append('/opt/homebrew/lib/python3.9/site-packages')
-print(sys.path)
+#coding: UTF-8
+import urllib.request
+from bs4 import BeautifulSoup
+
+url = "https://www.nikkei.com/"
+
+html = urllib.request.urlopen(url)
+
+soup = BeautifulSoup(html, "html.parser")
+
+title_tag = soup.span
+
+print (title_tag)
+
