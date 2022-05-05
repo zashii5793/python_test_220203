@@ -1,11 +1,10 @@
-from xml.dom.expatbuilder import FilterVisibilityController
+def fact(n):
+    if n == 0:
+        return 1
+    else:
+        return n * fact(n-1)
 
 
-def addup(n):
-    a = 0
-    for i in range(1, n+1):
-        a = a + i
-    return a
-
-print(addup(10))    
-        
+for i in range (0, 20):
+    print(fact(i))
+    

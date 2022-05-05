@@ -41,10 +41,30 @@ def addup(n):
         a = a + i
     return a
 
-
 # 2-3 99の式を出力する
 # 2-4 素数を求める
+for i in range(2, 101):
+    h = i//2
+    f = True
+    for j in range(2, h+1):
+        if i % j == 0:
+                f = False
+                break
+    if f == True:
+        print(i, end=",")
+    
 # 2-5 nの階乗を求める
+
+def fact(n):
+    if n == 0:
+        return 1
+    else:
+        return n * fact(n-1)
+
+
+for i in range (0, 20):
+    print(fact(i))
+
  
 ##データ構造
 # 3-1 スタック
