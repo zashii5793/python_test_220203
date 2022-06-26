@@ -10,7 +10,7 @@ code = 9020 #JR東日本の証券コード
 url = "https://minkabu.jp/stock/{0:d}/settlement".format(code)
 html = requests.get(url)
 
-# BeautifulSoupのHTMLパーサーを生成
+# BeautifulSoußpのHTMLパーサーを生成
 soup = BeautifulSoup(html.content, "html.parser")
 
 # 全<table>要素を抽出

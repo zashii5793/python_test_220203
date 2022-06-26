@@ -12,4 +12,9 @@ def func2(n):
         func2(n/2)
 
 
+def func3(numbers):
+    for i in range(int(n)):
+        print()
+    
+
 func2(10)        

@@ -13,6 +13,7 @@ data = [
 ]
 import random
 from re import A
+from sys import set_coroutine_origin_tracking_depth
 for i in range(10):
     r = random.randint(1, 6)
     print(r)
@@ -68,6 +69,28 @@ for i in range (0, 20):
  
 ##データ構造
 # 3-1 スタック
+
+MAX = 5
+stack = [0]*MAX
+sp = 0
+def push(d):
+    global sp 
+    if sp < MAX:
+        stack[sp] = d
+        sp = sp + 1
+    else:
+
+def pop():
+    global sp
+    if sp > 0:
+        sp = sp -1
+        return stack[sp]
+    else:
+        return None
+
+for i in range(6):
+    push(i)
+                
 # 3-2 キュー
 # 3-3 リスト
 # 3-4 木
